@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<title>Joc Foarfece 2.0</title>
+
+<link rel="stylesheet" href="Style/12Joc.css">
+    </head>
+<p class="title">Piatra Foarfece Hartie</p>
+
+            <body>
+            <button onclick="
+                playGame ('rock') ;
+                "class = "move-button">
+                <img src="images/rock-emoji.png" class="move-icon"></button>
+
+                 <button onclick="
+                    playGame ('paper');
+                " class = "move-button">
+                <img src="images/paper-emoji.png" class="move-icon"></button>
+
+                 <button onclick="
+                         playGame ('scissors');
+                "class = "move-button">
+                <img src="images/scissors-emoji.png" class="move-icon"></button>
+
+                        <p class=" js-result result"></p>
+                        <p class=" js-move"></p>
+                        <p class=" js-score scor" ></p>
+
+                <button onclick="
+                score.wins=0;
+                score.ties=0;
+                score.loses=0;
+                localStorage.removeItem('score');
+                updateScoreElement();
+                " class="reset-score">Reset Score</button>
+
+                <button class="auto-score" onclick="
+                autoPlay();
+                ">
+                    Auto play</button>
+
+            </body>
+
+
+        <script src="Scripts/12Joc.js">
+        </script>
+
+
+
+
+
+
+
+
+
+
+</html>
